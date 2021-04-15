@@ -68,7 +68,7 @@ nav ul {
   }
 }
 .firstview {
-  height: 700px;
+  height: auto;
 }
 .firstview-wrap__ttl {
   font-size: 32px;
@@ -83,6 +83,11 @@ nav ul {
 .firstview-wrap__img {
   margin-top: 20px;
 }
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -96,4 +101,12 @@ a {
   cursor: pointer;
   display: inline-block;
   margin: 20px auto 40px;
+}
+.about{
+  padding: 70px 0;
+  background-color: #fff7f8;
+}
+.about-wrap{
+  margin: 0 auto;
+  width: 90%;
 }
