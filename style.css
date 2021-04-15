@@ -128,3 +128,7 @@ a {
   margin: 0 auto;
   width: 90%;
 }
+
+.about-wrap__img {
+  margin-top: 25px;
+}
