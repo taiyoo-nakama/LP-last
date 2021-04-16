@@ -102,6 +102,9 @@ a {
   display: inline-block;
   margin: 20px auto 40px;
 }
+.firstview-wrap__btn{
+  text-align: center;
+}
 .about {
   padding: 70px 0;
   background-color: #fff7f8;
@@ -110,6 +113,35 @@ a {
   margin: 0 auto;
   width: 90%;
 }
+.about-wrap__ttl{
+  font-size: 16px;
+  line-height: 18px;
+}
 .about-wrap__img {
   margin-top: 25px;
+}
+
+.trouble{
+  padding: 70px auto;
+  display: inline-block;
+}
+.trouble-wrap__ttl{
+  text-align: center;
+  font-size: 26px;
+}
+.trouble-wrap__content{
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  align-items: center;
+  width: 100%;
+}
+.trouble-wrap__txt{
+  width: 60%;
+}
+.trouble-wrap__img{
+  width: 30%;
 }
