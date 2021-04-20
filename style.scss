@@ -33,6 +33,9 @@ nav ul {
   list-style: none;
   text-decoration: none;
 }
+li a {
+  color: #000;
+}
 .pc {
   display: none;
 }
@@ -42,6 +45,7 @@ nav ul {
   flex-wrap: wrap;
   align-items: inherit;
   flex-direction: row;
+  color: #000;
 }
 @media (min-width: 769px) {
   .btn .btn:first-of-type {
@@ -164,7 +168,7 @@ a {
 .learn-wrap__img {
   margin: 30px 0 40px;
 }
-span {
+.learn-wrap__ttl span {
   color: #e37ab0;
 }
 .learn-wrap__txt {
@@ -219,24 +223,30 @@ span {
 .service__btn:first-of-type {
   border-radius: 30px;
   font-size: 16px;
-  padding: 1.5rem 4rem;
-  text-align: center;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
   background-color: #6f99e3;
-  display: block;
+  display: flex;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px;
+  max-width: 350px;
+  margin: 20px auto 0;
 }
 .service__btn:last-of-type {
   border-radius: 30px;
   font-size: 16px;
-  padding: 1.5rem 4rem;
-  text-align: center;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
-  display: block;
+  display: flex;
   color: #e37ab0;
   cursor: pointer;
-  margin-top: 20px;
+  max-width: 350px;
+  margin: 20px auto 0;
 }
 
 .company {
@@ -249,21 +259,27 @@ span {
   margin-bottom: 40px;
 }
 
-.card__ttl {
+.card__ttl{
   @include ttlStyle;
 }
-.card-wrap {
-  display: flex;
-  white-space: nowrap;
+.card-wrap{
   overflow-x: scroll;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 0;
 }
-.card {
+.common__ttl:first-of-type{
+  margin-left: 1px;
+}
+.common__ttl{
   width: 95%;
+  display: inline-block;
   border-radius: 15px;
   margin-left: 10px;
   box-sizing: border-box;
-  border: 0 solid #000;
+  background-color: #fff;
   box-shadow: 0px 0px 6px #dedede;
+  white-space: normal;
 }
 .card__img {
   position: relative;
@@ -287,7 +303,7 @@ span {
   margin-top: 30px;
 }
 .wrap-comment {
-  overflow-wrap: break-word;
+  font-size: 20px;
 }
 
 .plan {
@@ -359,6 +375,16 @@ span {
   padding: 10px 5px;
   color: #e37ab0;
 }
+.question-wrap__ttl {
+  padding: 20px;
+  display: table-cell;
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+..question-wrap__ttl span {
+  display: inline-block;
+}
 .question-wrap__ttl span::after {
   border-top: 1px solid #000;
   border-right: 1px solid #000;
@@ -367,12 +393,39 @@ span {
 }
 .question-anser__item {
   position: relative;
-  padding: 20px 20px 20px 50px;
+  padding: 20px 20px 20px 70px;
 }
 .anser {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 20px;
   color: #6f99e3;
   font-weight: bold;
+}
+.footer {
+  padding: 70px 0 0;
+  width: 100%;
+  background-color: #fff7f8;
+}
+.footer-wrap {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer-wrap__logo {
+  width: 150px;
+  padding: 15px 0;
+}
+.footer-wrap__nav {
+  margin-left: 10%;
+  margin-bottom: 70px;
+}
+.footer-wrap__nav li {
+  line-height: 40px;
+}
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
 }
