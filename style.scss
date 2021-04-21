@@ -305,7 +305,7 @@ a {
 }
 .wrap-comment {
   font-size: 20px;
-
+}
 .plan {
   padding: 70px 0;
   text-align: center;
@@ -348,7 +348,9 @@ a {
   border-bottom: 1px solid #dedede;
 }
 .card-item {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px #dedede;
 }
 .plan-card__btn a {
   width: 50%;
@@ -362,46 +364,53 @@ a {
   @include ttlStyle;
 }
 .question-wrap__content {
-  //position: relative;
-  padding: 10px;
-}
-.question-wrap__ttl {
-  //position: absolute;
-  //top: 10px;
-  //left: 10px;
+  padding: 20px 40px 20px 50px;
+  position: relative;
   font-weight: bold;
   border: 1px solid #e37ab0;
   border-radius: 15px;
-  padding: 10px 5px;
   color: #e37ab0;
 }
-.question-wrap__ttl {
-  padding: 20px;
-  display: table-cell;
-  height: auto;
-  width: 100%;
-  vertical-align: middle;
-}
-.question-wrap__ttl span {
-  display: inline-block;
-}
-.question-wrap__ttl span::after {
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  padding: 10px;
-  transform: rotate(135deg);
-}
-.question-anser__item {
-  position: relative;
-  padding: 20px 20px 20px 70px;
-}
-.anser {
+.question-wrap__content::before{
+  font-size: 22px;
+  line-height: 1;
   position: absolute;
-  top: 0px;
+  top: 50%;
+  left: 20px;
+  color: #e37ab0;
+  transform: translate(0,-50%);
+  content: "Q";
+  display: block;
+}
+.question-wrap__anser {
+  padding: 20px 40px 20px 50px;
+  position: relative;
+}
+.question-wrap__anser::before{
+  font-size: 22px;
+  line-height: 1;
+  position: absolute;
+  top: 30%;
   left: 20px;
   color: #6f99e3;
+  transform: translate(0,-50%);
+  content: "A";
+  display: block;
   font-weight: bold;
 }
+.question-wrap__content ::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 26px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(135deg);
+}
+
 .footer {
   padding: 70px 0 0;
   width: 100%;
