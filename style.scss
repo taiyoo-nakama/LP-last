@@ -266,7 +266,7 @@ a {
   overflow-x: scroll;
   white-space: nowrap;
   padding: 10px 0;
-  font-size: 0;
+  font-size: 20px;
 }
 .common__ttl:first-of-type {
   margin-left: 1px;
@@ -284,23 +284,23 @@ a {
 .card__img img {
   border-radius: 20px;
 }
-.card-comment {
-  top: 97%;
-  left: 30px;
-  padding: 5px 15px;
-  border: 1px solid #e37ab0;
-  box-sizing: border-box;
-  background-color: #fff;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
 .card-wrap__comment {
+  position: relative;
   padding: 30px 15px;
   color: #000;
 }
+.card-comment {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #e37ab0;
+  background-color: #fff;
+}
 .card-wrap__ttl {
-  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #000;
 }
 .wrap-comment {
