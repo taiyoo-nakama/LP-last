@@ -259,20 +259,20 @@ a {
   margin-bottom: 40px;
 }
 
-.card__ttl{
+.card__ttl {
   @include ttlStyle;
 }
-.card-wrap{
+.card-wrap {
   overflow-x: scroll;
   white-space: nowrap;
   padding: 10px 0;
   font-size: 0;
 }
-.common__ttl:first-of-type{
+.common__ttl:first-of-type {
   margin-left: 1px;
 }
-.common__ttl{
-  width: 95%;
+.common__ttl {
+  min-width: 95%;
   display: inline-block;
   border-radius: 15px;
   margin-left: 10px;
@@ -281,30 +281,30 @@ a {
   box-shadow: 0px 0px 6px #dedede;
   white-space: normal;
 }
-.card__img {
-  position: relative;
-}
 .card__img img {
   border-radius: 20px;
 }
 .card-comment {
-  position: absolute;
   top: 97%;
   left: 30px;
   padding: 5px 15px;
   border: 1px solid #e37ab0;
   box-sizing: border-box;
   background-color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 .card-wrap__comment {
   padding: 30px 15px;
+  color: #000;
 }
 .card-wrap__ttl {
   margin-top: 30px;
+  color: #000;
 }
 .wrap-comment {
   font-size: 20px;
-}
 
 .plan {
   padding: 70px 0;
@@ -382,7 +382,7 @@ a {
   width: 100%;
   vertical-align: middle;
 }
-..question-wrap__ttl span {
+.question-wrap__ttl span {
   display: inline-block;
 }
 .question-wrap__ttl span::after {
